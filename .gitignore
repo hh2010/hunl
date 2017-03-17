@@ -1,2 +1,7 @@
-*.ea.npy
+AhKdQs2d.ea.npy
+AhKdQs2d6d.ea.npy
+AhKdQs2d6s.ea.npy
 .ipynb_*
+.idea
+old/
+__pycache__

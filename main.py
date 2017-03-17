@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import lib.hunl_fn as hunl
 from lib.hunl_fn import Range, plotEqDistn
 from ui.hunl_main import Ui_main
@@ -162,9 +165,11 @@ class PlotCanvas(FigureCanvas):
         self.ax.cla()
         self.xs, self.ys = plotEqDistn(rng1, rng2, board)
         self.ax.plot(self.xs, self.ys)
+        self.draw()
+
+
         # self.ax.plt.xlabel('Hero Hand Combos')
         # self.ax.plt.ylabel('Hero Equity %')
-        self.draw()
 
 # Initialize the application
 if __name__ == '__main__':
